@@ -1,104 +1,116 @@
-`<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
-    <meta charset="utf-8" >
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Robbie Lens Photographie</title>
-    <link href="design.css" rel="stylesheet" >
+
+    <!-- Stylesheets -->
+    <link rel="icon" type="image/png" href="img/frate.png">
+    <link rel="stylesheet" href="design.css">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+    <!-- Header Navigation -->
     <header>
-        <section>
-            <nav class="navbar">
-                <div class="nav-links">
-                    <div>    
-                        <img src="img/frate.png" alt="logo robbbie lens" height="30px">
-                    </div>
-                    <div>
-                        <a href="index.html" class="lien-icone"> Accueil</a>
-                        <a href="a-propos.html" class="lien-icone" > A propos</a>
-                        <a href="portfolio.html" class="lien-icone">Portfolio</a>
-                    </div>
-                </div>
-            </nav>
-        </section> 
+        <nav class="navbar">
+            <div class="nav-brand">
+                <img src="img/frate.png" alt="Logo Robbie Lens" height="30" width="30">
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="lien-icone">Accueil</a>
+                <a href="a-propos.html" class="lien-icone">À propos</a>
+                <a href="portfolio.html" class="lien-icone">Portfolio</a>
+            </div>
+        </nav>
     </header>
+
+    <!-- Main Section -->
     <main>
-        <section>
+        <section class="portfolio-header">
             <h1>Portfolio</h1>
         </section>
+
         <section class="portfolio-section-photos">
+            <!-- Landscapes Gallery -->
             <h2>Paysages</h2>
             <div class="grid-paysages">
-                <a href="portfolio/paysage1.jpg">
-                    <img src="portfolio/paysage1.jpg" alt="Mont Aoraki - Nouvelle-Zélande" >
+                <a href="portfolio/paysage1.jpg" aria-label="Voir la photo du Mont Aoraki en grand">
+                    <img src="portfolio/paysage1.jpg" alt="Mont Aoraki - Nouvelle-Zélande" loading="lazy" decoding="async">
                 </a>
-                <a href="portfolio/paysage2.jpg">
-                    <img src="portfolio/paysage2.jpg" alt="Parc National d’Abel Tasman - Nouvelle-Zélande" >
+                <a href="portfolio/paysage2.jpg" aria-label="Voir la photo du Parc National d'Abel Tasman en grand">
+                    <img src="portfolio/paysage2.jpg" alt="Parc National d’Abel Tasman - Nouvelle-Zélande" loading="lazy" decoding="async">
                 </a>
-                <a href="portfolio/paysage3.jpg">
-                    <img src="portfolio/paysage3.jpg" alt="Lac Rotorua - Nouvelle-Zélande" >
+                <a href="portfolio/paysage3.jpg" aria-label="Voir la photo du Lac Rotorua en grand">
+                    <img src="portfolio/paysage3.jpg" alt="Lac Rotorua - Nouvelle-Zélande" loading="lazy" decoding="async">
                 </a>
-                <a href="portfolio/paysage4.jpg">
-                    <img src="portfolio/paysage4.jpg" alt="Lac Wanaka - Nouvelle-Zélande" >
+                <a href="portfolio/paysage4.jpg" aria-label="Voir la photo du Lac Wanaka en grand">
+                    <img src="portfolio/paysage4.jpg" alt="Lac Wanaka - Nouvelle-Zélande" loading="lazy" decoding="async">
                 </a>
-                <a href="portfolio/paysage5.jpg">
-                    <img src="portfolio/paysage5.jpg" alt="Mont Taranaki - Nouvelle-Zélande" >
+                <a href="portfolio/paysage5.jpg" aria-label="Voir la photo du Mont Taranaki en grand">
+                    <img src="portfolio/paysage5.jpg" alt="Mont Taranaki - Nouvelle-Zélande" loading="lazy" decoding="async">
                 </a>
-                <a href="portfolio/paysage6.jpg">
-                    <img src="portfolio/paysage6.jpg" alt="Milford Sound - Nouvelle-Zélande" >
+                <a href="portfolio/paysage6.jpg" aria-label="Voir la photo de Milford Sound en grand">
+                    <img src="portfolio/paysage6.jpg" alt="Milford Sound - Nouvelle-Zélande" loading="lazy" decoding="async">
                 </a>
-                <a href="portfolio/paysage7.jpg">
-                    <img src="portfolio/paysage7.jpg" alt="Twelve Apostle - Australie" >
+                <a href="portfolio/paysage7.jpg" aria-label="Voir la photo de Twelve Apostle en grand">
+                    <img src="portfolio/paysage7.jpg" alt="Twelve Apostle - Australie" loading="lazy" decoding="async">
                 </a>
-                <a href="portfolio/paysage8.jpg">
-                    <img src="portfolio/paysage8.jpg" alt="Wai-O-Tapu - Nouvelle-Zélande" >
+                <a href="portfolio/paysage8.jpg" aria-label="Voir la photo de Wai-O-Tapu en grand">
+                    <img src="portfolio/paysage8.jpg" alt="Wai-O-Tapu - Nouvelle-Zélande" loading="lazy" decoding="async">
                 </a>
-                <a href="portfolio/paysage9.jpg">
-                    <img src="portfolio/paysage9.jpg" alt="Mont Cook - Nouvelle Zélande" >
+                <a href="portfolio/paysage9.jpg" aria-label="Voir la photo du Mont Cook en grand">
+                    <img src="portfolio/paysage9.jpg" alt="Mont Cook - Nouvelle Zélande" loading="lazy" decoding="async">
                 </a>
             </div>
+
+            <!-- Portraits Gallery -->
             <h2>Portraits</h2>
             <div class="grid-portraits">
-                <a href="portfolio/portrait1.jpg">
-                    <img src="portfolio/portrait1.jpg" alt="Portrait jeune femme 1" >
+                <a href="portfolio/portrait1.jpg" aria-label="Voir le Portrait 1 en grand">
+                    <img src="portfolio/portrait1.jpg" alt="Portrait jeune femme 1" loading="lazy" decoding="async">
                 </a>
-                <a href="portfolio/portrait2.jpg">
-                    <img src="portfolio/portrait2.jpg" alt="Portrait jeune femme 2" >
+                <a href="portfolio/portrait2.jpg" aria-label="Voir le Portrait 2 en grand">
+                    <img src="portfolio/portrait2.jpg" alt="Portrait jeune femme 2" loading="lazy" decoding="async">
                 </a>
-                <a href="portfolio/portrait3.jpg">
-                    <img src="portfolio/portrait3.jpg" alt="Portrait jeune homme 3" >
+                <a href="portfolio/portrait3.jpg" aria-label="Voir le Portrait 3 en grand">
+                    <img src="portfolio/portrait3.jpg" alt="Portrait jeune homme 3" loading="lazy" decoding="async">
                 </a>
-                <a href="portfolio/portrait4.jpg">
-                    <img src="portfolio/portrait4.jpg" alt="Portrait jeune femme 4" >
+                <a href="portfolio/portrait4.jpg" aria-label="Voir le Portrait 4 en grand">
+                    <img src="portfolio/portrait4.jpg" alt="Portrait jeune femme 4" loading="lazy" decoding="async">
                 </a>
-                <a href="portfolio/portrait5.jpg">
-                    <img src="portfolio/portrait5.jpg" alt="Portrait jeune femme 5" >
+                <a href="portfolio/portrait5.jpg" aria-label="Voir le Portrait 5 en grand">
+                    <img src="portfolio/portrait5.jpg" alt="Portrait jeune femme 5" loading="lazy" decoding="async">
                 </a>
-                <a href="portfolio/portrait6.jpg">
-                    <img src="portfolio/portrait6.jpg" alt="Portrait jeune femme 6" >
+                <a href="portfolio/portrait6.jpg" aria-label="Voir le Portrait 6 en grand">
+                    <img src="portfolio/portrait6.jpg" alt="Portrait jeune femme 6" loading="lazy" decoding="async">
                 </a>
-
             </div>
         </section>
     </main>
-   <footer>
-         <div class="blanc">
-            <img src="img/frate.png" alt="logo robbbie lens" height="30px">   
-            <a target="_blank" href="https://twitter.com/" class="lien-icone">
-                <img src="img/twitter.png" alt="logo twitter">
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="blanc">
+            <img src="img/frate.png" alt="Logo Robbie Lens" height="30" width="30">   
+            
+            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/" class="lien-icone" aria-label="Page Twitter de Robbie Lens">
+                <img src="img/twitter.png" alt="Logo Twitter">
             </a>
-            <a target="_blank" href="https://www.instagram.com/" class="lien-icone"> 
-                <img src="img/instagram.png" alt="logo instagram" height="30px">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/" class="lien-icone" aria-label="Page Instagram de Robbie Lens"> 
+                <img src="img/instagram.png" alt="Logo Instagram" height="30" width="30">
             </a> 
                
-              <a href="https://www.istockphoto.com/fr/photos/facebook-twitter-instagram"> istockphoto</a>
-         </div>   
+            <a target="_blank" rel="noopener noreferrer" href="https://www.istockphoto.com/fr/photos/facebook-twitter-instagram" class="credit-link">iStockphoto</a>
+        </div>   
     </footer>
-</body>
 
+</body>
 </html>
