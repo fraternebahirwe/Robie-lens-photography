@@ -1,109 +1,129 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil - Robbie Lens Photographie</title>
+
+    <!-- Favicon & Stylesheet -->
+    <link rel="icon" type="image/png" href="img/frate.png">
     <link href="design.css" rel="stylesheet">
-     
+
+    <!-- Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+    <!-- Navigation Header -->
     <header>
-        <section>
-            <nav class="navbar">
-                <div class="nav-links">
-                    <div>    
-                        <img src="img/frate.png" alt="logo robbbie lens" height="30px">
-                    </div>
-                    <div>
-                        <a href="index.html" class="lien-icone"> Accueil</a>
-                        <a href="a-propos.html" class="lien-icone" > A propos</a>
-                        <a href="portfolio.html" class="lien-icone">Portfolio</a>
-                    </div>
-             </nav>
-            </section> 
-   </header>    
-     <main>
-        <section class="accueil-introduction">
-             <div>
-                 <h1>Fraterne Bahirwe Photographie</h1>
-                 <p>
-                     Où <em class="italic">professionalisme</em> s'allie avec<em class="italic"> passion.</em>
-                     Depuis plus de 5 ans maintenant, j'exerce mon métier 
-                      avec la passion qui m'annime : capturer l'essence de chaque instant.
-                </p><br>              
-                <a href="portfolio.html" class="project">Un projet? Ecrivez moi</a>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <img src="img/frate.png" alt="Logo Robbie Lens" height="30" width="30">
             </div>
-            <img src="img/fbi.png" alt="portrait fraterne" height="500px">
+            <div class="nav-links">
+                <a href="index.html" class="lien-icone">Accueil</a>
+                <a href="a-propos.html" class="lien-icone">À propos</a>
+                <a href="portfolio.html" class="lien-icone">Portfolio</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero / Introduction Section -->
+        <section class="accueil-introduction">
+            <div class="hero-content">
+                <h1>Fraterne Bahirwe Photographie</h1>
+                <p>
+                    Où <em class="italic">professionalisme</em> s'allie avec <em class="italic">passion.</em>
+                    Depuis plus de 5 ans maintenant, j'exerce mon métier 
+                    avec la passion qui m'anime : capturer l'essence de chaque instant.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="project">Un projet ? Écrivez-moi</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="img/fbi.png" alt="Portrait de Fraterne Bahirwe" height="500">
+            </div>
         </section>
 
+        <!-- Featured Portfolio Section -->
         <section class="portfolio-section-photos">            
             <h2>Mon dernier projet</h2>
             <div class="grid-paysages-accueil">
-                <a href="accueil/element-1.png">
-                    <img src="accueil/element-1.png" alt="Twelve apostles - Australie" >
+                <a href="accueil/element-1.png" aria-label="Voir la photo Twelve Apostles en grand">
+                    <img src="accueil/element-1.png" alt="Twelve Apostles - Australie" loading="lazy" decoding="async">
                 </a>
-                <a href="accueil/element-2.png">
-                    <img src="accueil/element-2.png" alt="Wai-O-Tapu - Nouvelle-Zélande" >
+                <a href="accueil/element-2.png" aria-label="Voir la photo Wai-O-Tapu en grand">
+                    <img src="accueil/element-2.png" alt="Wai-O-Tapu - Nouvelle-Zélande" loading="lazy" decoding="async">
                 </a>
-                <a href="accueil/element-3.png">
-                    <img src="accueil/element-3.png" alt="Parc National d Abel Tasman - Nouvelle-Zélande" >
+                <a href="accueil/element-3.png" aria-label="Voir la photo Parc National d'Abel Tasman en grand">
+                    <img src="accueil/element-3.png" alt="Parc National d'Abel Tasman - Nouvelle-Zélande" loading="lazy" decoding="async">
                 </a>
-                <a href="accueil/element-4.png">
-                    <img src="accueil/element-4.png" alt="Lac Rotorua - Nouvelle-Zélande" >
+                <a href="accueil/element-4.png" aria-label="Voir la photo Lac Rotorua en grand">
+                    <img src="accueil/element-4.png" alt="Lac Rotorua - Nouvelle-Zélande" loading="lazy" decoding="async">
                 </a>
-                <a href="accueil/element-5.png">
-                    <img src="accueil/element-5.png" alt="Milford Sound - Nouvelle-Zélande" >
+                <a href="accueil/element-5.png" aria-label="Voir la photo Milford Sound en grand">
+                    <img src="accueil/element-5.png" alt="Milford Sound - Nouvelle-Zélande" loading="lazy" decoding="async">
                 </a>
-                <a href="accueil/element-6.png">
-                    <img src="accueil/element-6.png" alt="Lac Wanaka - Nouvelle-Zélande" >
+                <a href="accueil/element-6.png" aria-label="Voir la photo Lac Wanaka 1 en grand">
+                    <img src="accueil/element-6.png" alt="Lac Wanaka - Nouvelle-Zélande" loading="lazy" decoding="async">
                 </a>
-                <a href="accueil/zizu.PNG">
-                    <img src="accueil/zizu.PNG" alt="Lac Wanaka - Nouvelle-Zélande" >
+                <a href="accueil/zizu.PNG" aria-label="Voir la photo Lac Wanaka 2 en grand">
+                    <img src="accueil/zizu.PNG" alt="Lac Wanaka - Nouvelle-Zélande" loading="lazy" decoding="async">
                 </a>
-                <a href="accueil/bhr.jpg">
-                    <img src="accueil/bhr.jpg" alt="Lac Wanaka - Nouvelle-Zélande" >
+                <a href="accueil/bhr.jpg" aria-label="Voir la photo Lac Wanaka 3 en grand">
+                    <img src="accueil/bhr.jpg" alt="Lac Wanaka - Nouvelle-Zélande" loading="lazy" decoding="async">
                 </a>
-                <a href="accueil/images.jpeg">
-                    <img src="accueil/images.jpeg" alt="Lac Wanaka - Nouvelle-Zélande" >
+                <a href="accueil/images.jpeg" aria-label="Voir la photo Lac Wanaka 4 en grand">
+                    <img src="accueil/images.jpeg" alt="Lac Wanaka - Nouvelle-Zélande" loading="lazy" decoding="async">
                 </a>
             </div>
         </section>  
-        <section class="contact">
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
             <h2>Parlons de votre projet</h2>
-            <form >
+            <form action="#" method="post">
                 <div class="form-nom-email">
                     <div class="form-column">       
-                         <label>Nom</label>
-                         <input>
-                     </div>
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" required placeholder="Votre nom">
+                    </div>
                     <div class="form-column">
-                        <label>E-mail</label>
-                          <input>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required placeholder="votre@email.com">
                     </div>
-                    </div>
+                </div>
                 
-                <label>Message</label>
-                <textarea></textarea>
-                <input type="submit" value="Envoyé" class="cta" id="contact">
+                <div class="form-column">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Décrivez votre projet..."></textarea>
+                </div>
+
+                <input type="submit" value="Envoyer" class="cta">
             </form>
         </section>
-     </main>
-    <footer>
-         <div class="blanc">
-         <img src="img/frate.png" alt="logo robbbie lens" height="30px">
-             <a target="_blank" href="https://twitter.com/" class="lien-icone">
-                 <img src="img/twitter.png" alt="logo twitter">
-             </a>
-             <a target="_blank" href="https://www.instagram.com/" class="lien-icone"> 
-                 <img src="img/instagram.png" alt="logo instagram" height="30px">
-             </a> 
-               
-              <a href="https://www.istockphoto.com/fr/photos/facebook-twitter-instagram"> istockphoto</a>
-         </div>   
-     </footer>   
-    </body>
+    </main>
 
+    <!-- Footer -->
+    <footer>
+        <div class="blanc">
+            <img src="img/frate.png" alt="Logo Robbie Lens" height="30" width="30">
+            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/" class="lien-icone" aria-label="Twitter">
+                <img src="img/twitter.png" alt="Logo Twitter">
+            </a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/" class="lien-icone" aria-label="Instagram"> 
+                <img src="img/instagram.png" alt="Logo Instagram" height="30" width="30">
+            </a> 
+            <a target="_blank" rel="noopener noreferrer" href="https://www.istockphoto.com/fr/photos/facebook-twitter-instagram" class="credit-link">iStockphoto</a>
+        </div>   
+    </footer>
+
+</body>
 </html>
