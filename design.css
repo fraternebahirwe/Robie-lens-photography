@@ -1,149 +1,235 @@
-    
-a{
-  text-decoration:none ;
-  color: #1173c4fe;
-  font-size: 1.5em;
-  font-family:Arial, Helvetica, sans-serif;
+/* ==========================================================================
+   Design Tokens / CSS Variables
+   ========================================================================== */
+:root {
+  /* Color Palette */
+  --color-bg-primary: #1b1c25;
+  --color-accent-indigo: #A5B4FC;
+  --color-accent-blue: #1173c4;
+  --color-heading-blue: #3973d7;
+  --color-text-main: #F9F8FF;
+  --color-text-muted: #ddd9d9;
+  --color-border-muted: #8e86b5;
+  --color-table-border: #6363ac;
+  --color-portfolio-bg: #826544;
+
+  /* Typography */
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-header: Georgia, 'Times New Roman', Times, serif;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease-in-out;
+}
+
+/* ==========================================================================
+   Base & Reset Styles
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-main);
   padding: 10px;
+  margin: 0;
+}
+
+/* Global Typography */
+h1 {
+  font-size: 3.5em;
+  color: var(--color-accent-indigo);
+  font-family: var(--font-header);
+}
+
+h2 {
+  color: var(--color-heading-blue);
+  width: 250px;
+  margin: auto;
+  padding-top: 10px;
+}
+
+p {
+  font-size: 1.1em;
+  font-family: var(--font-serif);
+  color: var(--color-text-main);
+}
+
+ul {
+  font-size: 1em;
+  font-family: var(--font-serif);
+  color: var(--color-text-muted);
+  display: inline-block;
+  text-align: left;
+}
+
+.italic {
+  color: var(--color-accent-indigo);
+}
+
+/* ==========================================================================
+   Components & Links
+   ========================================================================== */
+a {
+  color: var(--color-accent-blue);
+  font-family: var(--font-sans);
+  text-decoration: none;
+  transition: opacity var(--transition-fast), background-color var(--transition-fast);
+}
+
+.lien-icone {
+  font-size: 1.2em;
+  padding: 10px 16px;
   border-radius: 100px;
 }
 
-.lien-icone:hover{
-  background: linear-gradient(#b2cbcd9f , rgb(168,180,247)); 
-}
-.italic{
-  color: #A5B4FC;
+.lien-icone:hover {
+  background: linear-gradient(#b2cbcd9f, rgb(168, 180, 247));
 }
 
-.project{
-  background-color:#A5B4FC; 
-}
-
-.link{
+.link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
   border-radius: 10px;
-  background-color:#A5B4FC; 
-  display:flex;
+  background-color: var(--color-accent-indigo);
+  color: var(--color-bg-primary);
+  font-weight: bold;
   margin-top: 10px;
-  margin-bottom: 20px;    
+  margin-bottom: 20px;
 }
 
-header{
+/* ==========================================================================
+   Header & Navigation
+   ========================================================================== */
+header {
   font-size: 1em;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  padding: 20px;   
-}
-h1{
-  font-size: 3.5em;
-  color: #A5B4FC;
-  font-family: Georgia, 'Times New Roman', Times, sans serif; 
-}
-p{
-  font-size: 1.1em;
-  font-family: "Playfair Display",serif;
-  color: #F9F8FF;
-}
-ul{
-  font-size: 1em;
-  font-family: "Playfair Display", serif;
-  color: #ddd9d9;
-  display: inline-block;
-  text-align: left;
- }
-.nav-links{
-  background: rgb(255, 255, 255);
+  font-family: var(--font-header);
   padding: 20px;
-  display:flex;
-  justify-content:space-between;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  background: #ffffff;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border-radius: 30px;
-}
-.nav-links:hover{
-  opacity: 0.7;
-}
-body{
-  background: #1b1c25;
-  padding: 10px;
-}
-h2{
-  color: #3973d7;
-  width: 250px;   
-  margin: auto;
-  padding-top: 10px 
-  }
-.gold{
-  border-right: 3px solid;
-  border-bottom: 3px solid;
-  border-color: #8e86b5;
+  transition: opacity var(--transition-fast);
 }
 
+.nav-links:hover {
+  opacity: 0.9;
+}
 
-section{
+/* ==========================================================================
+   Content Sections & Decorative Cards
+   ========================================================================== */
+section {
   padding: 10px;
 }
+
 .accueil-introduction {
-  display:flex;
-  justify-content:space-between;
+  display: flex;
+  justify-content: space-between;
   width: 80%;
   margin: auto;
 }
 
+.gold {
+  border-right: 3px solid var(--color-border-muted);
+  border-bottom: 3px solid var(--color-border-muted);
+  padding: 15px;
+}
+
+.project {
+  background-color: var(--color-accent-indigo);
+}
+
+/* ==========================================================================
+   Portfolio & Photo Grids
+   ========================================================================== */
 .portfolio-section-photos {
-  background-color: rgb(130, 101, 68);
+  background-color: var(--color-portfolio-bg);
+  padding: 20px;
 }
 
 .portfolio-section-photos h2 {
- color: #A5B4FC;
- margin-bottom:40px;
- margin-top: 40px;
- text-align: center;
+  color: var(--color-accent-indigo);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .grid-paysages-accueil img,
-.grid-paysages img ,
-.grid-portraits img{
+.grid-paysages img,
+.grid-portraits img {
   width: 100%;
   height: 100%;
-  object-fit:fill;
+  object-fit: cover; /* Prevents aspect-ratio stretching */
+  border-radius: 4px;
 }
 
-.grid-paysages, .grid-paysages-accueil{
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 300px  300px 300px;
-  gap:15px;
+.grid-paysages,
+.grid-paysages-accueil {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 300px);
+  gap: 15px;
 }
 
-.grid-portraits{
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 300px  300px;
-  gap:15px;
+.grid-portraits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 300px);
+  gap: 15px;
 }
 
-table{
-    font-family:Arial, Helvetica, serif ;
-    text-align: center;
-    color: #e5e5e5;
-     border-collapse: collapse; 
-    width:100%;   
+/* ==========================================================================
+   Data Tables
+   ========================================================================== */
+table {
+  font-family: var(--font-sans);
+  text-align: center;
+  color: #e5e5e5;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
 }
-caption{
-    padding: 20px;
+
+caption {
+  padding: 20px;
+  font-size: 1.2em;
 }
-td,th{
-    border: 2px solid rgb(99, 99, 172);  
+
+th, td {
+  border: 2px solid var(--color-table-border);
 }
-td{
-    padding: 40px;
+
+td {
+  padding: 20px;
 }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
 .contact h2 {
-  color: #909bd3;  
-  margin-bottom: 50px; 
+  color: #909bd3;
+  margin-bottom: 50px;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  color: #A5B4FC;
+  color: var(--color-accent-indigo);
 }
 
 .form-nom-email {
@@ -153,38 +239,52 @@ form {
 }
 
 .form-column {
-  flex:1;
+  flex: 1;
   display: flex;
-  flex-direction:column ;
+  flex-direction: column;
   margin-bottom: 20px;
-}
-
-
-input,
-textarea {
-  padding: 15px;
-  border-radius: 3px;
-  border: none;
 }
 
 label {
   margin-bottom: 10px;
+  font-family: var(--font-sans);
 }
 
-input[type='submit']{
-  width:200px;
-  margin:auto;
-  margin-top:10px;
-  background-color:#A5B4FC; 
+input,
+textarea {
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  outline: none;
+  font-family: var(--font-sans);
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  border-color: var(--color-accent-indigo);
+}
+
+input[type='submit'] {
+  width: 200px;
+  margin: 10px auto 0;
+  background-color: var(--color-accent-indigo);
+  color: var(--color-bg-primary);
+  font-weight: bold;
   border-radius: 30px;
+  cursor: pointer;
+  transition: opacity var(--transition-fast);
 }
 
-input[type='submit']:hover{
-  opacity:0.5;
-}  
-footer .blanc{
+input[type='submit']:hover {
+  opacity: 0.8;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+footer .blanc {
   margin-top: 50px;
-  display:flex ;
+  display: flex;
   align-items: center;
   justify-content: space-between;
- }
+}
