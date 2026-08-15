@@ -3,88 +3,102 @@
 
 <head>
     <meta charset="utf-8">
-    <title>À propos de Robbie Lens phtographie</title>
-    <link rel="icon" type="image/png" href="img/frate.png">
-    <link href="design.css"rel="stylesheet" >
-    <link href="style.css"rel="stylesheet" >
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos de Robbie Lens Photographie</title>
 
+    <!-- Favicon & Stylesheets -->
+    <link rel="icon" type="image/png" href="img/frate.png">
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 
 <body> 
- <section>
-    <section>
-        <nav class="navbar">
-            <div class="nav-links">
-                <div>    
-                    <img src="img/frate.png" alt="logo robbbie lens" height="30px">
-                </div>
-                <div>
-                    <a href="index.html" class="lien-icone"> Accueil</a>
-                    <a href="a-propos.html" class="lien-icone" > A propos</a>
-                    <a href="portfolio.html" class="lien-icone">Portfolio</a>
-                </div>
-            </nav>
-    </section> 
-  <main>
-        <h1>À propos de Robbie Lens</h1>
-     <div class="gold">
-      <p>Photographe depuis plus de 5 ans,
-         je réalise des reportages aux photos dynamiques et pertinentes pour vos projets de communication. 
-         Créativité, qualité, et sérénité pour vous ! Je gère tout, depuis la direction artistique, la réalisation du reportage,
-          jusqu’à la livraison de vos photos retouchées, prêtes à l’emploi.
-    </p>
-   
-   
-    <h2>Services</h2>
-        <ul>
-            <li>Portrait seul ou à plusieurs,</li>
-            <li>Shooting mode</li>
-            <li>Retouches sur mesure</li>
-            <li>Developpement</li>
-         </ul>
-     </div>
-     </main>   
-    <div>
-        <a href=" portfolio.html" class="link">VOIR MON PORTFOLIO</a>
 
-    </div> 
-    <table>
-        <caption><strong>Tarifs</strong></caption>
-        <tr>
-            <th>Désignation</th>
-            <th>Quantité</th>
-            <th>Prix</th>
-        </tr>
-        <tr>
-            <td>Ressources photo studio professionnel</td>
-            <td>✕800photos</td>
-            <td>3 200€/8000photos</td>
-        </tr>
-        <tr>
-            <td>Assistant photo lumière proffessionnel</td>
-            <td>✕2 sets studio</td>
-            <td>1 500€/journée</td>
-        </tr>
-    </table>
-     <footer>   
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <img src="img/frate.png" alt="Logo Robbie Lens" height="30">
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="lien-icone">Accueil</a>
+                <a href="a-propos.html" class="lien-icone">À propos</a>
+                <a href="portfolio.html" class="lien-icone">Portfolio</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="about-section">
+            <h1>À propos de Robbie Lens</h1>
+            <div class="gold">
+                <p>
+                    Photographe depuis plus de 5 ans, je réalise des reportages aux photos dynamiques 
+                    et pertinentes pour vos projets de communication. Créativité, qualité, et sérénité 
+                    pour vous ! Je gère tout, depuis la direction artistique, la réalisation du reportage, 
+                    jusqu’à la livraison de vos photos retouchées, prêtes à l’emploi.
+                </p>
+
+                <h2>Services</h2>
+                <ul>
+                    <li>Portrait seul ou à plusieurs</li>
+                    <li>Shooting mode</li>
+                    <li>Retouches sur mesure</li>
+                    <li>Développement</li>
+                </ul>
+            </div>
+
+            <div class="cta-container">
+                <a href="portfolio.html" class="link">VOIR MON PORTFOLIO</a>
+            </div>
+        </section>
+
+        <!-- Pricing Table -->
+        <section class="pricing-section">
+            <table>
+                <caption><strong>Tarifs</strong></caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Désignation</th>
+                        <th scope="col">Quantité</th>
+                        <th scope="col">Prix</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ressources photo studio professionnel</td>
+                        <td>800 photos</td>
+                        <td>3 200 € / 800 photos</td>
+                    </tr>
+                    <tr>
+                        <td>Assistant photo lumière professionnel</td>
+                        <td>2 sets studio</td>
+                        <td>1 500 € / journée</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>   
         <div class="blanc">
-            <img src="img/frate.png" alt="logo Fraterne" height="30px">
-    
-            <a target="_blank" href="https://twitter.com/">
-                <img src="img/twitter.png" alt="logo twitter">
+            <img src="img/frate.png" alt="Logo Robbie Lens" height="30">
+            
+            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/">
+                <img src="img/twitter.png" alt="Logo Twitter">
             </a>
-            <a target="_blank" href="https://www.instagram.com/" class="lien-icone"> 
-                <img src="img/instagram.png" alt="logo instagram" height="30px">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/" class="lien-icone"> 
+                <img src="img/instagram.png" alt="Logo Instagram" height="30">
             </a> 
         </div>
-      </footer>
-    </section>  
-</body>
+    </footer>
 
+</body>
 </html>
